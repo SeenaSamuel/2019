@@ -31,7 +31,7 @@ function draw() {
   }
 
   stroke(0, 0, 255);
-  fill(0, 0, 255, 50);
+  fill(0, 0, 255, 10);
   beginShape();
   for (let p of hull) {
     vertex(p.x, p.y);
@@ -39,15 +39,15 @@ function draw() {
   endShape(CLOSE);
 
   stroke(0, 255, 0);
-  strokeWeight(32);
+  strokeWeight(20);
   point(leftMost.x, leftMost.y);
 
-  stroke(200, 0, 255);
-  strokeWeight(32);
+  stroke(400, 300, 0);
+  strokeWeight(20);
   point(currentVertex.x, currentVertex.y);
 
   stroke(0, 255, 0);
-  strokeWeight(2);
+  strokeWeight(.5);
   line(currentVertex.x, currentVertex.y, nextVertex.x, nextVertex.y);
 
   let checking = points[index];
