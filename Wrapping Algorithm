@@ -1,3 +1,5 @@
+//in javascript
+
 const points = [];
 const hull = [];
 
